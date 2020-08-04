@@ -8,7 +8,13 @@ namext
 
 `namext` - Extract scientific names from text using gnfinder
 
-## Install
+## Install gnfinder
+
+gnfinder is required to use this package.
+
+Installation instructions can be found at the [gnfinder repo](https://github.com/gnames/gnfinder). 
+
+## Install namext
 
 
 ```r
@@ -20,9 +26,7 @@ remotes::install_github("ropenscilabs/namext")
 library("namext")
 ```
 
-## xxxx
-
-xxx
+## extract names
 
 
 ```r
