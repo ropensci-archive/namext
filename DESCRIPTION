@@ -1,0 +1,22 @@
+Package: namext
+Title: Extract Scientific Names from Text
+Description: Extract scientific names from text using gnfinder.
+Version: 0.0.1.91
+License: MIT + file LICENSE
+Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"), 
+    email = "myrmecocystus@gmail.com")
+URL: https://github.com/ropenscilabs/namext (devel)
+    https://docs.ropensci.org/namext (docs)
+BugReports: https://github.com/ropenscilabs/namext/issues
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+Language: en-US
+Imports:
+    sys,
+    pdftools,
+    tibble,
+    jsonlite
+Suggests:
+    testthat
+RoxygenNote: 7.1.1

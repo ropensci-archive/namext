@@ -1,0 +1,42 @@
+namext
+======
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+[![R-check](https://github.com/ropenscilabs/namext/workflows/R-check/badge.svg)](https://github.com/ropenscilabs/namext/actions/)
+
+
+`namext` - Extract scientific names from text using gnfinder
+
+## Install
+
+```{r eval=FALSE}
+remotes::install_github("ropenscilabs/namext")
+```
+
+```{r}
+library("namext")
+```
+
+## xxxx
+
+xxx
+
+```{r}
+x <- system.file("examples/BoegerEtal2015.pdf", package="namext")
+name_extract(x)
+```
+
+## Meta
+
+* A collaboration with [California Academy of Sciences](http://www.calacademy.org/)
+* Please [report any issues or bugs](https://github.com/ropenscilabs/namext/issues)
+* License: MIT
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
