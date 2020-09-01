@@ -6,9 +6,9 @@ Version: 0.0.1.91
 License: MIT + file LICENSE
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"), 
     email = "myrmecocystus@gmail.com")
-URL: https://github.com/ropenscilabs/namext (devel)
+URL: https://github.com/ropensci/namext (devel)
     https://docs.ropensci.org/namext (docs)
-BugReports: https://github.com/ropenscilabs/namext/issues
+BugReports: https://github.com/ropensci/namext/issues
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Encoding: UTF-8

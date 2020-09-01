@@ -3,7 +3,7 @@ namext
 
 
 
-[![R-check](https://github.com/ropenscilabs/namext/workflows/R-check/badge.svg)](https://github.com/ropenscilabs/namext/actions/)
+[![R-check](https://github.com/ropensci/namext/workflows/R-check/badge.svg)](https://github.com/ropensci/namext/actions/)
 
 
 `namext` - Extract scientific names from text using gnfinder
@@ -18,7 +18,7 @@ Installation instructions can be found at the [gnfinder repo](https://github.com
 
 
 ```r
-remotes::install_github("ropenscilabs/namext")
+remotes::install_github("ropensci/namext")
 ```
 
 
@@ -59,6 +59,6 @@ name_extract(x)
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/namext/issues)
+* Please [report any issues or bugs](https://github.com/ropensci/namext/issues)
 * License: MIT
 * Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
