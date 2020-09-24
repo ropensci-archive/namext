@@ -46,6 +46,7 @@ name_extract <- function(path, verify = FALSE, language = NULL,
     text <- pdftools::pdf_text(path)
     txt_path <- tempfile(fileext = ".txt")
     writeLines(text, txt_path)
+    path <- txt_path
   }
   args <- character(0)
   if (verify) args <- c(args, "-c")
@@ -55,7 +56,7 @@ name_extract <- function(path, verify = FALSE, language = NULL,
   if (!is.null(data_sources)) args <- c(args, "-s", paste0(data_sources, collapse=","))
   if (!is.null(tokens)) args <- c(args, c("-t", tokens))
 
-  z <- sys::exec_internal("gnfinder", c("find", args, txt_path), error = FALSE)
+  z <- sys::exec_internal("gnfinder", c("find", args, path), error = FALSE)
   err_chk(z)
   parsed <- jsonlite::fromJSON(rawToChar(z$stdout))
   parsed$metadata <- tibble::as_tibble(parsed$metadata)
